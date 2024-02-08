@@ -1,0 +1,8 @@
+d = Membuat direktory
+% = Membuat File
+Ex = Explore
+SO = Untuk Reload
+{v =} spasi semua ke kanan
+C = Menghapus depan semua
+f { = Jumpa
+ctrl + w = pindah space
