@@ -81,4 +81,9 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set('n', '<CR>', ':nohlsearch<CR><CR>', { noremap = true, silent = true })
 
+-- Press 'H', 'L' to jump to start/end of a line (first/last char)
+keymap.set("n", "L", "$<left>")
+keymap.set("n", "H", "^")
+
+
 
