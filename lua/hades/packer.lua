@@ -85,4 +85,5 @@ return require('packer').startup(function(use)
     -- Multi visual vim
     use("mg979/vim-visual-multi")
     use ('Exafunction/codeium.vim')
+    use("tpope/vim-surround")
 end)
