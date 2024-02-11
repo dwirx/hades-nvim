@@ -81,4 +81,8 @@ return require('packer').startup(function(use)
     use("HiPhish/rainbow-delimiters.nvim")
 
     use("folke/tokyonight.nvim")
+
+    -- Multi visual vim
+    use("mg979/vim-visual-multi")
+    use ('Exafunction/codeium.vim')
 end)
