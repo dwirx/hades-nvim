@@ -85,5 +85,9 @@ keymap.set('n', '<CR>', ':nohlsearch<CR><CR>', { noremap = true, silent = true }
 keymap.set("n", "L", "$<left>")
 keymap.set("n", "H", "^")
 
+-- Macos Recorded
+keymap.set("n", "Q", "@qj")
+keymap.set("x", "Q", ":norm @q<CR>")
+
 
 

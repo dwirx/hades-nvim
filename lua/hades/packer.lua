@@ -107,4 +107,17 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
   use("nvim-tree/nvim-tree.lua")
+  -- NEW
+  use("SmiteshP/nvim-navic")
+  use("LunarVim/breadcrumbs.nvim")
+  use("stevearc/oil.nvim")
+  use {
+    "0x100101/lab.nvim",
+    run = "cd js && npm ci",
+    requires = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("lab").setup {}
+    end
+  }
+
 end)
