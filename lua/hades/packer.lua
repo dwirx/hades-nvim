@@ -119,5 +119,11 @@ return require('packer').startup(function(use)
       require("lab").setup {}
     end
   }
-
+  use {
+    'kevinhwang91/nvim-ufo',
+    requires = {
+      'kevinhwang91/promise-async',
+      'luukvbaal/statuscol.nvim'
+    },
+  }
 end)
