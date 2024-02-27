@@ -6,3 +6,8 @@ This is my new RC.  There is no video yet.
   using neotest
 
 
+## Instal
+```
+git clone -b hades-lazy git@github.com:dwirx/hades-nvim.git
+git clone -b hades-lazy https://github.com/dwirx/hades-nvim.git
+```
