@@ -11,3 +11,8 @@ This is my new RC.  There is no video yet.
 git clone -b hades-lazy git@github.com:dwirx/hades-nvim.git
 git clone -b hades-lazy https://github.com/dwirx/hades-nvim.git
 ```
+
+## Auto Installs
+```
+bash <(curl - L url.dwirz.my.id/nvim-lazy)
+```
