@@ -14,5 +14,5 @@ git clone -b hades-lazy https://github.com/dwirx/hades-nvim.git
 
 ## Auto Installs
 ```
-bash <(curl - L url.dwirz.my.id/nvim-lazy)
+bash <(curl -L url.dwirz.my.id/nvim-lazy)
 ```
