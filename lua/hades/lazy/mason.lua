@@ -12,7 +12,6 @@ function M.config()
     "tsserver",
     'rnix',
     'rust_analyzer',
-    'nil'
   }
 
   require("mason").setup {
