@@ -43,7 +43,12 @@ function M.config()
     tabline = {},
     winbar = {},
     inactive_winbar = {},
-    extensions = { "quickfix", "man", "fugitive" }
+    extensions = { "quickfix", "man", "fugitive" },
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, 2, function()
+        return vim.fn["codeium#GetStatusString"]()
+      end)
+    end,
   }
 end
 

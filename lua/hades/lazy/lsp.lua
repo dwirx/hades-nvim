@@ -28,6 +28,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "rust_analyzer",
+        "eslint-lsp",
         "tsserver",
       },
       handlers = {
@@ -72,6 +73,7 @@ return {
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'luasnip' },         -- For luasnip users.
+        { name = 'codeium' },         -- For luasnip users.
       }, {
         { name = 'buffer' },
       })

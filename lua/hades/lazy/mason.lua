@@ -12,6 +12,8 @@ function M.config()
     "tsserver",
     'rnix',
     'rust_analyzer',
+    "typescript-language-server",
+    "eslint-lsp"
   }
 
   require("mason").setup {
