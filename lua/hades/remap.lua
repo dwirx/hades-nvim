@@ -2,10 +2,12 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+-- Move BLocks in visual Mode
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") --Move current line down
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") --Move current line up
 
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-
+vim.keymap.set("v", "L", ":normal! >gv<CR>")
+vim.keymap.set("v", "H", ":normal! <gv<CR>")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -14,8 +16,8 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Multi line
-vim.keymap.set("n", "ml", "<C-v>")
-vim.keymap.set("v", "ml", "<S-i>")
+vim.keymap.set("n", "ml", "<C-v>") --multiLine
+vim.keymap.set("v", "ml", "<S-i>") -- multiline
 
 vim.keymap.set("n", "<leader>vwm", function()
     require("vim-with-me").StartVimWithMe()
@@ -76,11 +78,18 @@ keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
+
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
+-- window management
+keymap.set("n", "<C-l>", "<C-w>l", { desc = "Change window to right" })
+keymap.set("n", "<C-h>", "<C-w>h", { desc = "Change window to left" })
+keymap.set("n", "<C-j>", "<C-w>j", { desc = "Change window to bottom" })
+keymap.set("n", "<C-k>", "<C-w>k", { desc = "Change window to top" })
+keymap.set("n", "<C-x>", "<cmd>close<CR>", { desc = "Close current split" })
 
 
 -- Resize window
@@ -97,6 +106,7 @@ keymap.set("n", "H", "^")
 -- Macos Recorded
 keymap.set("n", "Q", "@qj")
 keymap.set("x", "Q", ":norm @q<CR>")
+keymap.set("n", "fz", ":HopWord<CR>")
 
 
 
