@@ -16,3 +16,13 @@ git clone -b hades-lazy https://github.com/dwirx/hades-nvim.git
 ```
 bash <(curl -L url.dwirz.my.id/nvim-lazy)
 ```
+## Uninstallation and Cleanup
+
+
+
+```
+rm -rf $HOME/.config/nvim $HOME/.local/share/nvim $HOME/.cache/nvim
+```
+
+
+
