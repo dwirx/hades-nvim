@@ -22,5 +22,17 @@ function TokyoNight.config()
   -- vim.cmd.colorscheme "TokyoNight"
 end
 
+local color = {
+  { "rebelot/kanagawa.nvim" },
+  { "catppuccin/nvim",      name = "catppuccin", priority = 1000 }
+}
+
+
+function color.config()
+  vim.cmd.colorscheme "catppuccin"
+end
+
 -- return M
-return TokyoNight
+-- return TokyoNight
+return color
+-- return Kanagawa

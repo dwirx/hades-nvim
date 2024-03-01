@@ -11,7 +11,7 @@ function M.config()
     "lua_ls",
     "tsserver",
     'rnix',
-    'rust_analyzer',
+    -- 'rust_analyzer',
     "typescript-language-server",
     "eslint-lsp"
   }
